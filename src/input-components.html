@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Components</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-black font-inter">
+    <div class="flex flex-col m-5 gap-5 p-10">
+        <!-- Default Input -->
+        <div class="relative">
+            <label class="text-neutral-500 text-xs font-medium p-1 m-4 absolute -top-7 bg-black">
+                Label
+            </label>
+            <input class="flex w-426 py-4 px-3 items-center gap-2.5 rounded border border-neutral-500 text-neutral-50 text-lg placeholder:neutral-500 placeholder:text-xl bg-black" type="text" placeholder="label">
+        </div>
+
+        <!-- Selected Input -->
+        <div class="relative w-426">
+            <label class="text-twitter-blue text-xs font-medium p-1 m-4 absolute -top-7 bg-black">
+                Label
+            </label>
+            <input class="flex w-426 py-4 px-3 justify-between items-center gap-2.5 rounded border border-twitter-blue text-neutral-50 text-lg placeholder:neutral-500 placeholder:text-xl bg-black" type="text" value="value">
+            <img src="/public/images/tick.svg" class="absolute top-4 right-3" alt="tick">
+        </div>
+    </div>
+
+    <div class="flex flex-col mx-5 my-10 gap-5 p-10">
+        <!-- Input Component 2 Default -->
+        <div class="flex w-482 items-start gap-3">
+            <img class="shrink-0 rounded-[200px]" src="/public/images/user-avatar.png" alt="user avatar">
+            <input class="flex w-434 items-center shrink-0 self-stretch bg-black placeholder:text-neutral-600 placeholder:text-xl " type="text" placeholder="What's happening?">
+        </div>
+
+        <!-- Input Component 2 Filled -->
+        <div class="flex w-482 items-start gap-3">
+            <img class="shrink-0 rounded-[200px]" src="/public/images/user-avatar.png" alt="user avatar">
+            <input class="flex w-434 items-center shrink-0 self-stretch bg-black text-neutral-50 text-xl" type="text" value="Don't wish for it, work for it.">
+        </div>
+    </div>
+
+    <div class="flex flex-col m-5 gap-5 p-10">
+        <!-- Search Input Default -->
+        <div class="flex w-348 h-9.7 py-2.5 pr-247 pl-4 items-center gap-3.7 shrink-0 rounded-full bg-searchbar-fill">
+            <img class="flex w-4.7 h-4.7 justify-center items-center shrink-0 pt-[1.583px] pr-[1.782px] pb-[1.781px] pl-[1.583px]" src="/public/images/dark-theme-search-group.svg" alt="">
+            <input class="bg-searchbar-fill placeholder:text-neutral-600 placeholder:text-base " type="search" placeholder="Search">
+        </div>
+
+        <!-- Search Input Selected -->
+        <div class="flex w-348 h-9.7 py-2.5 pr-247 pl-4 items-center gap-3.7 shrink-0 rounded-full bg-searchbar-fill border border-twitter-blue">
+            <img class="flex w-4.7 h-4.7 justify-center items-center shrink-0 pt-[1.583px] pr-[1.782px] pb-[1.781px] pl-[1.583px]" src="/public/images/dark-theme-search-group-selected.svg" alt="">
+            <input class="bg-searchbar-fill placeholder:text-neutral-600 placeholder:text-base text-base text-neutral-50 " type="search" value="Search">
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Component</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-black font-inter">
+    <div class="p-20">
+        <!-- Tweet Component -->
+        <div class="flex w-598 py-2 px-4 items-start gap-4 border border-neutral-700">
+            <div>
+                <img class="shrink-0" src="/public/images/user-avatar-2.png" alt="">
+            </div>
+            <div class="flex flex-col items-start gap-2 flex-grow shrink-0 basis-0">
+                <div class="flex flex-col items-start gap-1 self-stretch">
+                    <div class="flex items-center gap-px self-stretch">
+                        <span class="text-neutral-50 font-medium">Name</span>
+                        <span class="text-neutral-500">@handle • 10h</span>
+                    </div>
+                    <div class="text-neutral-50">
+                        <p>Writing gets easier after the first sentence.</p><br>
+                        <p>Lifting gets easier after the first set.</p><br>
+                        <p>People think and think and think until they finally decide to act. Their attention shifts from internal to external, and the difficulty they created in their mind vanishes.</p>
+                    </div>
+                </div>
+                <div class="flex py-3 justify-between items-center self-stretch">
+                    <div class="flex justify-center items-center gap-1.2 group">
+                        <img class="group-hover:hidden" src="/public/images/comment-sv.svg" alt="">
+                        <img class="hidden group-hover:inline" src="/public/images/comment-color-sv.svg" alt="">
+                        <span class="text-neutral-500 text-sm group-hover:text-twitter-blue">11</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-1.2 group">
+                        <img class="group-hover:hidden" src="/public/images/retweet-sv.svg" alt="">
+                        <img class="hidden group-hover:inline" src="/public/images/retweet-sv-color.svg" alt="">
+                        <span class="text-neutral-500 text-sm group-hover:text-success">270</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-1.2 group">
+                        <img class="group-hover:hidden" src="/public/images/heart-sv.svg" alt="">
+                        <img class="hidden group-hover:inline" src="/public/images/heart-color-highlight-sv.svg" alt="">
+                        <span class="text-neutral-500 text-sm group-hover:text-heart-hover">1,869</span>
+                    </div>
+                    <div class="flex items-start gap-1.2 group">
+                        <img class="group-hover:hidden" src="/public/images/reach-sv.svg" alt="">
+                        <img class="hidden group-hover:inline" src="/public/images/reach-sv-color.svg" alt="">
+                        <span class="text-neutral-500 text-sm group-hover:text-twitter-blue">99.6K</span>
+                    </div>
+                    <div class="flex items-start gap-1.2 group">
+                        <img class="group-hover:hidden" src="/public/images/share-sv.svg" alt="">
+                        <img class="hidden group-hover:inline" src="/public/images/share-sv-color.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
